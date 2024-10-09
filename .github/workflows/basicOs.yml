@@ -32,3 +32,5 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          #means that if there is a requirement file, it will know what library to install 
+          #for this machine 
