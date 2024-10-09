@@ -51,6 +51,8 @@ jobs:
       - name: print out hidden things 
         run: |
           ls
+          cd hidden folder
+          ls
           
        
    
