@@ -47,7 +47,7 @@ jobs:
            repository: sohliwen/UOBHidden
            token: ${{ secrets.SECRETUOB }}
 
-    # this prints out the hidden files
+    # this prints out the hidden files!
       - name: print out hidden things 
         run: |
           ls
