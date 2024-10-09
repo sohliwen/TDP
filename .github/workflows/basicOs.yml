@@ -34,3 +34,6 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           #means that if there is a requirement file, it will know what library to install 
           #for this machine 
+          #dependencies refer to external libraries or packages that your project needs 
+          #in order to run. These are usually defined in a requirements.txt file for 
+          #Python projects, which lists all the required packages and their specific versions.
