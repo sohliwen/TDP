@@ -45,13 +45,14 @@ jobs:
         uses: actions/checkout@v4
         with:
            repository: sohliwen/UOBHidden
+           path: hiddenfolder
            token: ${{ secrets.SECRETUOB }}
 
     # this prints out the hidden files!
       - name: print out hidden things 
         run: |
           ls
-          cd hidden folder
+          cd hiddenfolder
           ls
           
        
