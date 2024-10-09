@@ -6,14 +6,19 @@ on:
       - main
 
 jobs:
-  my-job:
-    name: My Job
-    runs-on: ubuntu-latest
+ my-job:
+  name: My Job
+    runs-on:ubuntu-latest
 
     steps:
-      - name: Print a greeting
-        run: |
-          echo "Hello there"
+    #step 1 - check out the source code from the repository 
+    - name: check out code 
+    uses: actions/checkout@v3
+
+    #step 2: Print a greeting message
+    - name: greeting steps 
+    run:
+      echo "Hello there"
 
 
 
