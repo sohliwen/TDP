@@ -1,4 +1,4 @@
-name: My Workflow File
+  name: My Workflow File
 
 on:
   pull_request:
@@ -62,5 +62,28 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           args: 'WHERE ARE WE EATING FOR LUNCH? BEN SAY HE TREATING'
+
+
+    # build and test and deploy using YAML
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Hello World</title>
+          <style>
+              body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+              }
+        </style>
+      </head>
+      <body>
+           <h1>Hello, World!</h1>
+           <p>This is a simple static webpage deployed to GitHub Pages.</p>
+      </body>
+      </html>
+
        
    
