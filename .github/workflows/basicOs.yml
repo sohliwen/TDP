@@ -61,6 +61,6 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: '{{ EVENT_PAYLOAD.repository.full_name }} IS HUNNGRY!!!!!.'
+          args: 'BEN IS HUNNGRY!!!!! BEN SAY END CLASS AT 2PPM.'
        
    
