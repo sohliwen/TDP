@@ -1,10 +1,14 @@
   name: My Workflow File
 
+
 on:
-  pull_request:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+
 
 jobs:
   my-job:
