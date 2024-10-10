@@ -53,6 +53,13 @@ jobs:
           ls
           cd hiddenfolder
           ls
-          
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+           files: |
+             *.xml
+
        
    
