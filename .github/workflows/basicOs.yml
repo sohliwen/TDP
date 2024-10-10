@@ -63,5 +63,6 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'WHERE ARE WE EATING FOR LUNCH? BEN SAY HE TREATING'
+          args: The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.
+          
   
