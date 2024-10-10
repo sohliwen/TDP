@@ -63,8 +63,8 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.
-
+          args: The project {{ EVENT_PAYLOAD.repository.full_name }} is pending to be deployed.
+ 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -77,6 +77,7 @@ jobs:
         uses:  sebestianpopp/discord-action@releases/v2
         with:
           webhook: ${{  secrets.DISCORD_WEBHOOK }}
+          message: The project {{ EVENT_PAYLOAD.repository.full_name }} is deployed. 
 
           
   
