@@ -64,5 +64,13 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           args: The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed.
+
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Adjust if necessary to point to the directory containing index.html
+
           
   
