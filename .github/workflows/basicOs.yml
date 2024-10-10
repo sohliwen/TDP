@@ -74,7 +74,7 @@ jobs:
 
       - if: ${{ success() }}
         name: discord 
-        uses:  sebestianpopp/discord-action@releases/v2
+        uses: Ilshidur/action-discord@master
         with:
           webhook: ${{  secrets.DISCORD_WEBHOOK }}
           message: The project {{ EVENT_PAYLOAD.repository.full_name }} is deployed. 
