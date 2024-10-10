@@ -43,19 +43,19 @@ jobs:
           pytest
           
       # Step 6: Access the hidden repo
-      - name: Hidden repo checkout 
-        uses: actions/checkout@v4
-        with:
-          repository: sohliwen/UOBHidden
-          path: hiddenfolder
-          token: ${{ secrets.SECRETUOB }}
+ #     - name: Hidden repo checkout 
+  #      uses: actions/checkout@v4
+   #     with:
+    #      repository: sohliwen/UOBHidden
+     #     path: hiddenfolder
+      #    token: ${{ secrets.SECRETUOB }}
 
       # Step 7: Print out hidden files
-      - name: Print out hidden things 
-        run: |
-          ls
-          cd hiddenfolder
-          ls
+     # - name: Print out hidden things 
+        #run: |
+    #      ls
+      #    cd hiddenfolder
+      #    ls
 
       # Step 8: Send a Discord notification
       - name: Discord notification 
