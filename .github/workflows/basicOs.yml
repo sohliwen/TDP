@@ -72,5 +72,11 @@ jobs:
           github_token: ${{ secrets.ANOTHER_TOKEN }}
           publish_dir: ./  # Adjust if necessary to point to the directory containing index.html
 
+      - if: ${{ success() }}
+        name: discord 
+        uses:  sebestianpopp/discord-action@releases/v2
+        with:
+          webhook: ${{  secrets.DISCORD_WEBHOOK }}
+
           
   
