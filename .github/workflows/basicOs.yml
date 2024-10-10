@@ -72,12 +72,14 @@ jobs:
           github_token: ${{ secrets.ANOTHER_TOKEN }}
           publish_dir: ./  # Adjust if necessary to point to the directory containing index.html
 
-      - if: ${{ success() }}
-        name: discord 
+      - name: Discord notification
+        if: ${{ success() }}
+        env:
+         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          webhook: ${{  secrets.DISCORD_WEBHOOK }}
-          message: The project {{ EVENT_PAYLOAD.repository.full_name }} is deployed. 
+         args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} is deployed.'
+
 
           
   
