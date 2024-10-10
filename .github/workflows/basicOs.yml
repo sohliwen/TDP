@@ -69,7 +69,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ANOTHER_TOKEN }}
           publish_dir: ./  # Adjust if necessary to point to the directory containing index.html
 
           
