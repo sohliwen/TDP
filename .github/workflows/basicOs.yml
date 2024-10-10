@@ -56,7 +56,7 @@ jobs:
           ls
 
     # create discord with discord action
-      - name: Discord notification
+      - name: Discord notification 
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
